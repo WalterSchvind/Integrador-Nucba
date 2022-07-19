@@ -14,6 +14,7 @@ body {
   width: 100%;
   color: black;
 }
+
 /* :root{} */
 section {
   display: flex;
@@ -28,12 +29,12 @@ a {
   color: white;
 }
 button {
-  background-color: #877a72;
-  border: 2px solid #131415;
+  background-color: #a49a94;
+  border: 2px solid #000000;
   border-radius: 10px;
   width: 180px;
   height: 40px;
-  color: white;
+  color: #000000;
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
@@ -41,6 +42,7 @@ button {
 }
 button:hover {
   background-color: black;
+  color: #ffffff;
   transition: all 0.4s ease-in;
 }
 /* Header */
@@ -49,12 +51,12 @@ button:hover {
 header {
   margin: 0 auto;
   /* max-width: 1300px; */
-  height: 100px;
+  height: 103px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 80px 0px 50px;
-  background-color: #ae2012;
+  background-color: #ac2012;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -75,33 +77,33 @@ header {
   gap: 50px;
 }
 .navbar a {
-  color: #9a8c98;
+  color: white;
   font-size: 20px;
   transition: all 0.3s linear;
 }
 .navbar a:hover {
-  color: #333533;
+  color: #129eab;
   transition: all 0.3s linear;
 }
 .navbar-list li:nth-child(n + 5) > a {
-  border: 3px solid #de7e17;
   font-size: 17px;
   color: white;
   padding: 8px 10px;
-  background-color: #de7e17;
+  background-color: #877a72;
+  border: 2px solid #877a72;
   border-radius: 5px;
   transition: all 0.3s linear;
 }
 .navbar-list li:nth-child(n + 5) > a:hover {
-  background-color: white;
-  color: #71a352;
+  background-color: black;
+  border: black;
+  color: white;
   transition: all 0.3s linear;
 }
 
 .navbar-list li:last-child > a {
-  border-color: #ec9c46;
-
-  background-color: #ec9c46;
+  background-color: #877a72;
+  border: 2px solid #877a72;
 }
 .navbar i {
   font-size: 40px;
@@ -140,7 +142,7 @@ header {
 /*  HERO */
 .hero-container {
   padding-top: 150px;
-  background-color: #f4a261;
+  background-color: #b5a886;
   color: #131415;
 }
 #inicio {
@@ -197,11 +199,12 @@ header {
 .section-title {
   padding-bottom: 50px;
   padding-top: 50px;
+  color: white;
 }
 .race-container {
   display: flex;
   flex-direction: column;
-  background-color: #d4a373;
+  background-color: #394053;
   text-align: center;
   align-items: center;
 }
@@ -290,7 +293,7 @@ header {
 }
 /* CORREDORES */
 .runners-container {
-  background-color: #c1cee7;
+  background-color: #b5a886;
 }
 #corredores {
   display: flex;
@@ -302,6 +305,9 @@ header {
   justify-content: space-around;
   gap: 25%;
   width: 100%;
+}
+.title-runners-container h2 {
+  color: #000000;
 }
 .runner-card-container {
   display: flex;
@@ -362,7 +368,7 @@ header {
 }
 /* contact */
 .contact-container {
-  background-color: #665974;
+  background-color: #394053;
 }
 .section-form-container {
   display: flex;
@@ -374,7 +380,7 @@ header {
 .form-info-container {
   display: flex;
   flex-direction: column;
-  color: black;
+  color: white;
   font-size: 20px;
 }
 .form-info-container input {
@@ -388,10 +394,10 @@ header {
   background-color: transparent;
   font-size: 18px;
   text-align: center;
-  color: black;
+  color: white;
 }
 .form-info-container input:focus {
-  border-bottom-color: #de7e17;
+  border-bottom-color: black;
   transition: 0.3s;
 }
 .form-info-container p {
@@ -436,7 +442,7 @@ header {
 }
 /* footer */
 .section-container {
-  background-color: #176bbe;
+  background-color: #b5a886;
 }
 .footer {
   display: flex;
